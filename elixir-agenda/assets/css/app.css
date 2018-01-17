@@ -1,0 +1,19 @@
+/* This file is for your main application css. */
+.header .nav li {
+    position: relative;
+    top: -16px;
+    font-size: 48px !important;
+    margin-left: 24px;
+}
+
+.header nav {
+    display: inline-block !important;
+}
+
+.header {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 60px !important;
+}
