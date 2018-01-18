@@ -1,0 +1,36 @@
+<h2>Listing Phones</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Last name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Phone type</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for phone <- @phones do %>
+    <tr>
+      <td><%= phone.name %></td>
+      <td><%= phone.last_name %></td>
+      <td><%= phone.address %></td>
+      <td><%= phone.email %></td>
+      <td><%= phone.phone %></td>
+      <td><%= phone.phone_type %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: phone_path(@conn, :show, phone), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: phone_path(@conn, :edit, phone), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: phone_path(@conn, :delete, phone), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Phone", to: phone_path(@conn, :new) %></span>

@@ -1,0 +1,38 @@
+<h2>Show Phone</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @phone.name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @phone.last_name %>
+  </li>
+
+  <li>
+    <strong>Address:</strong>
+    <%= @phone.address %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @phone.email %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @phone.phone %>
+  </li>
+
+  <li>
+    <strong>Phone type:</strong>
+    <%= @phone.phone_type %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: phone_path(@conn, :edit, @phone) %></span>
+<span><%= link "Back", to: phone_path(@conn, :index) %></span>
