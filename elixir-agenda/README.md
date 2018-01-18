@@ -1,4 +1,14 @@
-# Hello
+# Elixir Agenda
+
+### Demo video
+
+https://www.useloom.com/share/72b4edf3144e4f5cafc40e81efe79d0e
+
+### Demo GIF
+
+![Gif](https://raw.githubusercontent.com/Tigermisu/clase-lab-web/master/elixir-agenda/video-agenda.gif)
+
+## Default stuff
 
 To start your Phoenix server:
 
