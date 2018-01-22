@@ -19,6 +19,6 @@ defmodule Hello.Agenda.Phone do
   def changeset(%Phone{} = phone, attrs) do
     phone
     |> cast(attrs, [:name, :last_name, :address, :email, :phone, :phone_type])
-    |> validate_required([:name, :last_name, :address, :email, :phone, :phone_type])
+    |> validate_required([:name, :email, :phone])
   end
 end
